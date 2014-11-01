@@ -1,7 +1,5 @@
 # -*- coding: utf-8 -*-
 """
-Created on Sun Oct 26 15:57:52 2014
-
 @author: nikhilkardale
 """
 
@@ -61,6 +59,7 @@ def main():
         os.makedirs('out')
     
     all_posts = get_all_posts('http://xkcd.com/archive/')
+    # Fetching and downloading the latest 5 posts
     for post in all_posts[:5]:
         try:
             sleep(randint(1,6))
